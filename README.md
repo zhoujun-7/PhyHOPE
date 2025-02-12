@@ -9,8 +9,8 @@ This is the official repository for our work "Physics-guided Hand-Object Pose Es
 
 ## Training and Evaluation logs
 
-[Training logs](https://github.com/zhoujun-7/PhyHOPE/blob/main/results/training.log)
+[Training logs](https://github.com/zhoujun-7/PhyHOPE/blob/main/results/Train_on_DexYCB_Full.log)
 
-[Evaluation logs](https://github.com/zhoujun-7/PhyHOPE/blob/main/results/testing.log)
+[Evaluation logs](https://github.com/zhoujun-7/PhyHOPE/blob/main/results/Eval_on_DexYCB_Full.log)
 
 
