@@ -5,9 +5,7 @@ This is the official repository for our work "Physics-guided Hand-Object Pose Es
 
 ## Qualitative Results
 
-https://github.com/zhoujun-7/PhyHOPE/blob/main/results/qualitative%20results.mp4
-
-[Click here to watch the video](https://github.com/zhoujun-7/PhyHOPE/blob/main/results/qualitative%20results.mp4)
+[Click here to view the video](https://github.com/zhoujun-7/PhyHOPE/blob/main/results/qualitative%20results.mp4)
 
 ## Training and Evaluation logs
 
