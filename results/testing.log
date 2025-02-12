@@ -1,0 +1,136 @@
+2024-07-24 17:58:54,401 
+{   'RGB_shift_prob': 0.5,
+    'base_learning_rate': 0.0002,
+    'batch_size': 64,
+    'bbox_scale_factor': 1.2,
+    'blur_limit': (3, 7),
+    'brightness': (0.6, 1.3),
+    'center_jittering': 0.2,
+    'checkpoint': '',
+    'clahe_prob': 0.5,
+    'clean_data_mode': '2023_CVPR_HFL',
+    'color_jitter_prob': 0.5,
+    'contact_normal_distance_thresh': (-0.01, 0.01),
+    'contact_vertical_distance_thresh': 0.005,
+    'contrast': (0.6, 1.3),
+    'data_dir': '/root/Workspace/HOI/data/DexYCB',
+    'dataset_name': 'dexycb',
+    'eval_batch_size': 32,
+    'eval_full': True,
+    'eval_num_workers': 8,
+    'eval_path': '',
+    'eval_repeat_num': 50,
+    'full_evaluation_freq': 10,
+    'gamma': 0.96,
+    'gaussian_blur_prob': 0.5,
+    'gradient_accumulation_steps': 1,
+    'gradient_clip': -1.0,
+    'heatmap_hand_sigma': 2.0,
+    'heatmap_obj_sigma': 2.0,
+    'heatmap_size': 64,
+    'hue': (-0.15, 0.15),
+    'img_size': (640, 480),
+    'lr_step': 5,
+    'mark': 'DexYCB_WeightHandSelection',
+    'max_epochs': 100,
+    'max_rot': 30,
+    'mode': 'eval',
+    'model': 'DiffHandObj_BBox_Force',
+    'motion_blur_limit': (3, 7),
+    'motion_blur_prob': 0.5,
+    'num_workers': 16,
+    'optimizer': 'adamw',
+    'output_dir': 'output',
+    'patch_size': 256,
+    'pretrain': 'output/20240713_220813*_DexYCB-HBBox-Force_train_DiffHandObj_BBox_Force/Epoch_45.pt',
+    'print_freq': 500,
+    'random_erasing_max_area': 0.2,
+    'random_erasing_max_count': 1,
+    'random_erasing_min_area': 0.02,
+    'random_erasing_mode': 'pixel',
+    'random_erasing_prob': 0.5,
+    'random_seed': 0,
+    'remove_pretrained_keys': [],
+    'repeat_num': 20,
+    'roi_size': 32,
+    'rot_prob': 1,
+    'sample_T0': 0.65,
+    'sample_num': 100,
+    'sampler': 'ode',
+    'sampling_steps': 500,
+    'saturation': (0.6, 1.3),
+    'scale_factor': 0.2,
+    'scheduler': 'exp',
+    'sde_mode': 've',
+    'shift_limit': (-20, 20),
+    'sigma_limit': (0.2, 2.0),
+    'start_with_eval': False,
+    'topk_hand': 30,
+    'topk_obj': 10,
+    'use_mix_trainset': False,
+    'viz_freq': 50,
+    'weight_CoM_loss': 100.0,
+    'weight_diff_hand_loss': 1.0,
+    'weight_diff_obj_loss': 1.0,
+    'weight_distrib_loss': 1.0,
+    'weight_force_loss': 1.0,
+    'weight_gravity_loss': 1.0,
+    'weight_hand_contact_loss': 1.0,
+    'weight_hm_hand_loss': 1000.0,
+    'weight_hm_obj_loss': 1000.0,
+    'weight_joint2hm_loss': 1000.0,
+    'weight_joint_loss': 10000.0,
+    'weight_mano_pose_loss': 10,
+    'weight_mano_shape_loss': 1.0,
+    'weight_point_loss': 100.0,
+    'weight_segm_obj_loss': 30.0,
+    'weight_supervised_loss': 10,
+    'weight_torque_loss': 30.0,
+    'weight_vert_loss': 10000.0}
+2024-07-24 20:11:54,277 
+Hand Evaluation: 78784 samples
+2024-07-24 20:11:54,305 
+regression: 
+         MJE PA_MJE MJE_0 MJE_1 MJE_2  MJE_3  MJE_4 MJE_5  MJE_6  MJE_7  MJE_8 MJE_9 MJE_10 MJE_11 MJE_12 MJE_13 MJE_14 MJE_15 MJE_16 MJE_17 MJE_18 MJE_19 MJE_20
+right  11.71   5.35  0.00  4.35  7.63  10.34  14.51  8.96  11.69  13.54  16.51  9.25  12.24  14.29  18.06   8.65  11.62  14.17  18.55   8.69  11.12  13.57  18.22
+left   12.06   5.14  0.00  4.68  8.08  10.89  15.23  9.32  12.23  14.08  17.53  9.65  12.54  14.29  18.19   9.03  11.88  14.13  17.99   9.13  11.82  14.19  18.39
+both   11.88   5.25  0.00  4.52  7.85  10.61  14.87  9.14  11.96  13.81  17.01  9.45  12.39  14.29  18.12   8.84  11.75  14.15  18.27   8.91  11.47  13.88  18.30
+2024-07-24 20:11:54,315 
+one_candidate: 
+         MJE PA_MJE MJE_0 MJE_1  MJE_2  MJE_3  MJE_4  MJE_5  MJE_6  MJE_7  MJE_8  MJE_9 MJE_10 MJE_11 MJE_12 MJE_13 MJE_14 MJE_15 MJE_16 MJE_17 MJE_18 MJE_19 MJE_20
+right  16.14   6.74  0.00  5.95  10.71  14.73  20.82  12.48  16.59  19.23  23.35  12.91  17.08  19.82  24.75  11.99  15.95  19.22  24.66  11.92  15.09  18.13  23.67
+left   16.25   6.54  0.00  6.13  10.91  14.95  21.24  12.51  16.58  19.10  23.51  13.01  17.07  19.51  24.85  12.18  16.01  19.07  24.11  12.24  15.67  18.73  23.94
+both   16.20   6.64  0.00  6.04  10.81  14.84  21.03  12.50  16.58  19.17  23.43  12.96  17.07  19.67  24.80  12.08  15.98  19.15  24.39  12.08  15.38  18.43  23.81
+2024-07-24 20:11:54,325 
+mean_candidate_mano: 
+         MJE PA_MJE MJE_0 MJE_1 MJE_2 MJE_3  MJE_4 MJE_5 MJE_6  MJE_7  MJE_8 MJE_9 MJE_10 MJE_11 MJE_12 MJE_13 MJE_14 MJE_15 MJE_16 MJE_17 MJE_18 MJE_19 MJE_20
+right   9.91   5.16  0.00  3.89  6.71  8.88  12.27  7.51  9.34  10.73  13.17  7.72  10.02  11.73  15.17   7.36   9.77  12.15  16.29   7.61   9.73  11.97  16.11
+left   10.12   4.99  0.00  4.11  6.92  9.13  12.70  7.67  9.77  11.19  14.09  8.03  10.29  11.81  14.95   7.74   9.92  11.90  15.54   8.09  10.26  12.32  16.04
+both   10.01   5.07  0.00  4.00  6.82  9.01  12.48  7.59  9.55  10.96  13.63  7.87  10.15  11.77  15.06   7.55   9.85  12.03  15.92   7.85   9.99  12.14  16.07
+2024-07-24 20:11:56,409 
+Object Evaluation: 78784 samples 
+Mean Pose: 
+                          MCE   MCE2    OCE    ADD   ADDS  ADD01d ADDS01d    REP
+002_master_chef_can     60.14  20.14  19.14  42.71  10.03  34.88%  92.64%  21.35
+003_cracker_box         26.81  23.46  21.98  24.52  11.87  74.09%  94.64%   7.80
+004_sugar_box           34.08  24.16  21.33  28.31  12.00  60.25%  88.85%   9.90
+005_tomato_soup_can     41.32  21.66  20.52  31.85  10.94  25.86%  81.78%  13.82
+006_mustard_bottle      28.38  18.43  17.08  22.35   9.03  70.96%  95.08%   9.07
+007_tuna_fish_can       50.85  21.23  20.52  35.33  10.99  16.51%  78.21%  16.85
+008_pudding_box         38.97  27.94  26.12  33.22  15.88  54.85%  86.46%  12.61
+009_gelatin_box         32.52  24.47  23.08  28.09  12.42  38.92%  78.68%   9.40
+010_potted_meat_can     37.33  20.85  19.49  29.38  10.56  42.20%  83.90%  13.46
+011_banana              52.17  27.89  22.23  34.31  13.39  49.60%  85.23%  13.76
+019_pitcher_base        49.96  33.31  31.51  39.26  16.97  59.06%  91.79%  15.88
+021_bleach_cleanser     43.13  26.15  22.15  32.21  12.56  65.07%  92.48%  14.25
+024_bowl               115.72  20.47  19.27  65.03  10.98  22.00%  92.55%  36.68
+025_mug                 44.11  19.91  19.38  29.59   9.29  39.23%  90.39%  12.84
+035_power_drill         38.95  29.05  27.19  31.50  14.38  60.49%  89.48%  11.07
+036_wood_block         135.49  28.49  23.31  95.15  13.85   7.72%  89.51%  55.15
+037_scissors            60.92  33.55  27.39  38.02  17.41  36.10%  76.30%  14.04
+040_large_marker        36.11  23.91  20.55  27.37  13.25  11.67%  68.56%  10.84
+052_extra_large_clamp  110.49  33.40  25.74  56.10  15.50  29.24%  86.43%  27.66
+061_foam_brick          59.41  22.85  21.10  44.08  11.51  12.24%  73.07%  21.79
+average_instance        54.36  25.07  22.46  38.13  12.65  40.81%  85.81%  17.21
+2024-07-24 20:11:56,811 
+All is done
