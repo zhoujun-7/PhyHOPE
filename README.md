@@ -5,7 +5,9 @@ This is the official repository for our work "Physics-guided Hand-Object Pose Es
 
 ## Qualitative Results
 
-[Click here to view the video](https://www.bilibili.com/video/BV1dBACe2ETp/?vd_source=e993cb92835f99d8815f3e49237681dd)
+[Click here to view the video (Bilibili)](https://www.bilibili.com/video/BV1dBACe2ETp/?vd_source=e993cb92835f99d8815f3e49237681dd)
+
+[Click here to view the video (YouTube)](https://youtube.com/shorts/Z-EFpt9K04s?feature=share)
 
 ## Training and Evaluation logs
 
